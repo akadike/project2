@@ -1,7 +1,7 @@
 FROM ubuntu
-LABEL "maintainer"="sk12k@simplilearn.net"
+LABEL "maintainer"="lite4eva@gmail.com"
 RUN apt-get update
 RUN mkdir /tmp/dockerfiletest
 RUN apt-get install -y nginx
-COPY index.nginx-debian.html /var/www/ht
+COPY index.nginx-debian.html /var/www/html/
 CMD nginx -g 'daemon off;'
